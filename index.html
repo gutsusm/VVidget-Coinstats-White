@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>BTC Converter</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      min-height: 100%;
+      background: #FFFFFF;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .widget-container {
+      width: 100%;
+      height: 100%;
+      min-height: 200px;
+
+      background: #FFFFFF;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 16px;
+      overflow: hidden;
+    }
+
+    cs-converter {
+      display: block;
+      width: 100% !important;
+      max-width: 500px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="widget-container">
+
+    <cs-converter
+      background="#1C1B1B"
+      text-color="#191919"
+      rotate-button-color="#FFA959"
+      border-color="#19191926"
+      theme="dark"
+      sell-coin="bitcoin"
+      buy-coin="tether"
+      width="100%">
+    </cs-converter>
+
+  </div>
+
+  <script
+    crossorigin="anonymous"
+    async
+    src="https://static.coinstats.app/widgets/v6/converter.js">
+  </script>
+
+</body>
+</html>
